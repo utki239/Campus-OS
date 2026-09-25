@@ -1,249 +1,63 @@
 # CampusOS
 
-> A modern student-focused college life portal built using HTML5 and CSS3.
+CampusOS is a student-focused college portal built with semantic HTML5 and CSS3. It brings academic guidance, campus events, student life, learning resources, and support information together in one responsive experience.
 
-CampusOS is a multi-page college website designed to centralize academic information, campus events, student resources, and campus life activities into a single platform. The project follows modern web design principles while remaining beginner-friendly and easy to understand.
+## Pages
 
----
+- `index.html` — overview, quick access, upcoming events, and campus highlights
+- `academics.html` — subjects, study resources, academic information, exams, and study tips
+- `events.html` — featured event, categories, upcoming events, and participation benefits
+- `campus-life.html` — clubs, hostel life, cafeteria, sport, and student activities
+- `resources.html` — coding, study, career, learning-platform, and student-service resources
+- `contact.html` — support information, contact form, and FAQs
 
-## Project Overview
-
-CampusOS aims to improve the student experience by providing one place to access:
-
-- Academic information
-- Campus events
-- Student clubs and activities
-- Study resources
-- Career resources
-- Contact and support information
-
-The project is intentionally built using only **HTML5** and **CSS3** to demonstrate strong frontend fundamentals without using external frameworks.
-
----
-
-## Features
-
-### Home Page
-- Futuristic hero section
-- Quick access navigation cards
-- Upcoming events preview
-- Campus highlights
-- Student-focused overview
-
-### Academics Page
-- Subject information
-- Study resources
-- Academic calendar section
-- Examination information
-- Student success tips
-
-### Events Page
-- Featured event section
-- Event categories
-- Upcoming campus events
-- Participation benefits
-
-### Campus Life Page
-- Student clubs
-- Hostel facilities
-- Food and cafeteria information
-- Sports and recreation
-- Student activities
-
-### Resources Page
-- Coding resources
-- Study materials
-- Career preparation resources
-- Learning platforms
-- Useful academic links
-
-### Contact Page
-- Contact information
-- Student support form
-- Frequently asked questions
-
----
-
-## Technologies Used
-
-- HTML5
-- CSS3
-
-No JavaScript was used.
-
-No CSS frameworks were used.
-
-No external frontend libraries were used.
-
----
-
-## Project Structure
+## Project structure
 
 ```text
 CampusOS/
-│
 ├── index.html
 ├── academics.html
 ├── events.html
 ├── campus-life.html
 ├── resources.html
 ├── contact.html
-│
 ├── css/
 │   └── style.css
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── logos/
-│
-└── README.md
+└── assets/
+    ├── images/
+    │   ├── academics/
+    │   │   └── coding-collaboration.jpg
+    │   ├── campus/
+    │   │   ├── campus-library.jpg
+    │   │   └── technology-space.jpg
+    │   ├── community/
+    │   │   └── student-team.jpg
+    │   ├── events/
+    │   │   └── campus-event.jpg
+    │   └── resources/
+    │       └── study-library.jpg
+    ├── icons/
+    └── logos/
 ```
 
----
+## Visual system
 
-## Design System
+The design keeps CampusOS’s dark navy foundation and cyan/purple accents, with responsive grids, image-led feature sections, glass-like overlays, subtle gradients, and accessible focus states. Photographs are used only where they clarify the page topic: collaborative coding for Academics, a student gathering for Events, a project team for Campus Life, books for Resources, and a work space for Contact.
 
-### Color Palette
+## Image sources
 
-| Purpose | Color |
-|----------|----------|
-| Background | Dark Navy |
-| Primary Accent | Cyan |
-| Secondary Accent | Purple |
-| Card Surface | Dark Slate |
-| Text | Light Gray / White |
+The photographs are downloaded from [Unsplash](https://unsplash.com/) and are used under the [Unsplash License](https://unsplash.com/license). The local files retain the original Unsplash image IDs in the download URLs used during selection:
 
-### Design Goals
+- `campus-library.jpg` — `photo-1498243691581-b145c3f54a5a`
+- `coding-collaboration.jpg` — `photo-1531482615713-2afd69097998`
+- `campus-event.jpg` — `photo-1517457373958-b7bdd4587205`
+- `student-team.jpg` — `photo-1521737604893-d14cc237f11d`
+- `study-library.jpg` — `photo-1521587760476-6c12a4b040da`
+- `technology-space.jpg` — `photo-1519389950473-47ba0277781c`
 
-- Modern
-- Premium
-- Student-focused
-- Clean
-- Professional
-- Easy to maintain
-- Responsive
+## Technical notes
 
----
-
-## CSS Features
-
-The project demonstrates:
-
-- CSS Variables
-- Flexbox
-- CSS Grid
-- Responsive Design
-- Hover Effects
-- Transitions
-- Reusable Components
-- Typography Hierarchy
-- Form Styling
-- Accessibility Basics
-
----
-
-## Responsive Design
-
-CampusOS supports:
-
-### Desktop
-- Multi-column grid layouts
-- Full hero section
-- Wide navigation
-
-### Tablet
-- Reduced grid columns
-- Stacked hero layout
-- Flexible navigation
-
-### Mobile
-- Single-column layouts
-- Vertical navigation
-- Full-width forms
-- Optimized spacing
-
----
-
-## Reusable Components
-
-The design system includes reusable classes:
-
-```css
-.card
-.btn
-.grid-2
-.grid-3
-.grid-4
-.page-header
-.featured-event
-.contact-layout
-.hero
-.hero-content
-.hero-visual
-.hero-actions
-```
-
-These allow consistent styling throughout the website.
-
----
-
-## Accessibility Considerations
-
-The project includes:
-
-- Semantic HTML5 elements
-- Proper heading hierarchy
-- Form labels
-- Keyboard focus states
-- Readable color contrast
-- Responsive layouts
-
----
-
-## Future Improvements
-
-Potential future enhancements include:
-
-- JavaScript interactivity
-- Login system
-- Student dashboard
-- Event registration
-- Attendance tracking
-- Backend integration
-- Database support
-- Notifications system
-- Search functionality
-
----
-
-## Learning Outcomes
-
-This project demonstrates understanding of:
-
-1. Semantic HTML5
-2. CSS Variables
-3. Flexbox
-4. CSS Grid
-5. Responsive Design
-6. Forms and Accessibility
-7. Multi-page Website Development
-8. Component Reusability
-9. UI/UX Design Principles
-10. Frontend Project Structure
-
----
-
-## Author
-
-Developed as a college web development project.
-
-**Project Name:** CampusOS
-
-**Version:** 1.0
-
----
-
-## License
-
-This project is intended for educational and academic purposes.
+- HTML5 and CSS3 only
+- No JavaScript or frontend framework
+- Responsive layouts for desktop, tablet, and mobile
+- The contact form is a complete static HTML form and needs a backend endpoint to process submissions
